@@ -53,7 +53,8 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    column-gap: 56px;
+    row-gap: 64px;
   }
   @media (max-width: 960px) {
     .grid {
@@ -66,14 +67,11 @@
     }
   }
   .card {
-    background: var(--card-bg);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
     display: flex;
     flex-direction: column;
     gap: 16px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   }
   .card h2 {
     font-size: 20px;
@@ -91,26 +89,14 @@
   }
   .meta {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px 24px;
+    flex-direction: column;
+    gap: 6px;
     font-size: 13px;
     color: var(--muted);
   }
   .meta strong {
     color: var(--fg);
     font-weight: 500;
-  }
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .tag {
-    font-size: 12px;
-    padding: 4px 10px;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    color: var(--muted);
   }
   .desc {
     font-size: 14px;
@@ -144,12 +130,7 @@
       <div class="meta">
         <span><strong>業種</strong> 宿泊業</span>
         <span><strong>対応範囲</strong> ヒアリング / 設計 / ワイヤー / リリース / 撮影ディレクション</span>
-      </div>
-      <div class="tags">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">Sass</span>
-        <span class="tag">jQuery</span>
-        <span class="tag">WordPress</span>
+        <span><strong>使用技術</strong> HTML/CSS / Sass / jQuery / WordPress</span>
       </div>
     </div>
 
@@ -158,12 +139,7 @@
       <div class="meta">
         <span><strong>業種</strong> 老舗料理</span>
         <span><strong>対応範囲</strong> ヒアリング / 設計 / ワイヤー / デザイン / コーディング / リリース / 撮影ディレクション</span>
-      </div>
-      <div class="tags">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">Swiper</span>
-        <span class="tag">Lenis</span>
+        <span><strong>使用技術</strong> HTML/CSS / JavaScript / Swiper / Lenis</span>
       </div>
     </div>
 
@@ -172,10 +148,7 @@
       <div class="meta">
         <span><strong>業種</strong> エステサロン</span>
         <span><strong>対応範囲</strong> ヒアリング / 設計 / ワイヤー / デザイン</span>
-      </div>
-      <div class="tags">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">JavaScript</span>
+        <span><strong>使用技術</strong> HTML/CSS / JavaScript</span>
       </div>
     </div>
 
@@ -184,12 +157,7 @@
       <div class="meta">
         <span><strong>業種</strong> 旅館業</span>
         <span><strong>対応範囲</strong> ヒアリング / 設計 / ワイヤー / デザイン / コーディング / リリース</span>
-      </div>
-      <div class="tags">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">Sass</span>
-        <span class="tag">GSAP</span>
-        <span class="tag">WordPress</span>
+        <span><strong>使用技術</strong> HTML/CSS / Sass / GSAP / WordPress</span>
       </div>
     </div>
 
@@ -198,12 +166,7 @@
       <div class="meta">
         <span><strong>業種</strong> 建設業</span>
         <span><strong>対応範囲</strong> コーディング / リリース</span>
-      </div>
-      <div class="tags">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">Sass</span>
-        <span class="tag">jQuery</span>
-        <span class="tag">WordPress</span>
+        <span><strong>使用技術</strong> HTML/CSS / Sass / jQuery / WordPress</span>
       </div>
     </div>
 
@@ -212,11 +175,7 @@
       <div class="meta">
         <span><strong>業種</strong> パーソナルジム</span>
         <span><strong>対応範囲</strong> コーディング / リリース</span>
-      </div>
-      <div class="tags">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">jQuery</span>
-        <span class="tag">WordPress</span>
+        <span><strong>使用技術</strong> HTML/CSS / jQuery / WordPress</span>
       </div>
     </div>
 
@@ -225,13 +184,7 @@
       <div class="meta">
         <span><strong>業種</strong> 建設業</span>
         <span><strong>対応範囲</strong> コーディング</span>
-      </div>
-      <div class="tags">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">jQuery</span>
-        <span class="tag">GSAP</span>
-        <span class="tag">Swiper</span>
-        <span class="tag">WordPress</span>
+        <span><strong>使用技術</strong> HTML/CSS / jQuery / GSAP / Swiper / WordPress</span>
       </div>
     </div>
 
@@ -240,12 +193,7 @@
       <div class="meta">
         <span><strong>業種</strong> 建設業</span>
         <span><strong>対応範囲</strong> ヒアリング / 設計 / ワイヤー / デザイン / コーディング / リリース / 撮影ディレクション</span>
-      </div>
-      <div class="tags">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">jQuery</span>
-        <span class="tag">GSAP</span>
-        <span class="tag">WordPress</span>
+        <span><strong>使用技術</strong> HTML/CSS / jQuery / GSAP / WordPress</span>
       </div>
     </div>
 
