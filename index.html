@@ -52,14 +52,9 @@
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 56px;
-    row-gap: 64px;
-  }
-  @media (max-width: 960px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 72px;
+    row-gap: 72px;
   }
   @media (max-width: 640px) {
     .grid {
@@ -67,8 +62,6 @@
     }
   }
   .card {
-    padding-top: 24px;
-    border-top: 1px solid var(--line);
     display: flex;
     flex-direction: column;
     gap: 16px;
