@@ -81,15 +81,20 @@
     border-color: var(--accent);
   }
   .meta {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 16px;
+    row-gap: 6px;
+    margin: 0;
     font-size: 13px;
     color: var(--muted);
   }
-  .meta strong {
+  .meta dt {
     color: var(--fg);
     font-weight: 500;
+  }
+  .meta dd {
+    margin: 0;
   }
   .desc {
     font-size: 14px;
@@ -120,74 +125,74 @@
 
     <div class="card">
       <h2><a href="https://wakimachi-constructions.com/" target="_blank" rel="noopener">徳島県建設業協会 様</a></h2>
-      <div class="meta">
-        <span><strong>業種</strong> 建設業</span>
-        <span><strong>対応範囲</strong> コーディング</span>
-        <span><strong>使用技術</strong> HTML/CSS / jQuery / GSAP / Swiper / WordPress</span>
-      </div>
+      <dl class="meta">
+        <dt>業種</dt><dd>建設業</dd>
+        <dt>対応範囲</dt><dd>コーディング</dd>
+        <dt>使用技術</dt><dd>HTML/CSS / jQuery / GSAP / Swiper / WordPress</dd>
+      </dl>
     </div>
 
     <div class="card">
       <h2><a href="https://glamping-yamanakajofumoto.com/" target="_blank" rel="noopener">グランピング山中城麓 様</a></h2>
-      <div class="meta">
-        <span><strong>業種</strong> 宿泊業</span>
-        <span><strong>対応範囲</strong> ヒアリング / 設計 / ワイヤー / リリース / 撮影ディレクション</span>
-        <span><strong>使用技術</strong> HTML/CSS / Sass / jQuery / WordPress</span>
-      </div>
+      <dl class="meta">
+        <dt>業種</dt><dd>宿泊業</dd>
+        <dt>対応範囲</dt><dd>ヒアリング / 設計 / ワイヤー / リリース / 撮影ディレクション</dd>
+        <dt>使用技術</dt><dd>HTML/CSS / Sass / jQuery / WordPress</dd>
+      </dl>
     </div>
 
     <div class="card">
       <h2><a href="https://test-chimoto.prog-run.com/" target="_blank" rel="noopener">千茂登 様</a></h2>
-      <div class="meta">
-        <span><strong>業種</strong> 老舗料理</span>
-        <span><strong>対応範囲</strong> ヒアリング / 設計 / ワイヤー / デザイン / コーディング / リリース / 撮影ディレクション</span>
-        <span><strong>使用技術</strong> HTML/CSS / JavaScript / Swiper / Lenis</span>
-      </div>
+      <dl class="meta">
+        <dt>業種</dt><dd>老舗料理</dd>
+        <dt>対応範囲</dt><dd>ヒアリング / 設計 / ワイヤー / デザイン / コーディング / リリース / 撮影ディレクション</dd>
+        <dt>使用技術</dt><dd>HTML/CSS / JavaScript / Swiper / Lenis</dd>
+      </dl>
     </div>
 
     <div class="card">
       <h2><a href="https://agum-salon.com/" target="_blank" rel="noopener">アグムサロン 様</a></h2>
-      <div class="meta">
-        <span><strong>業種</strong> エステサロン</span>
-        <span><strong>対応範囲</strong> ヒアリング / 設計 / ワイヤー / デザイン</span>
-        <span><strong>使用技術</strong> HTML/CSS / JavaScript</span>
-      </div>
+      <dl class="meta">
+        <dt>業種</dt><dd>エステサロン</dd>
+        <dt>対応範囲</dt><dd>ヒアリング / 設計 / ワイヤー / デザイン</dd>
+        <dt>使用技術</dt><dd>HTML/CSS / JavaScript</dd>
+      </dl>
     </div>
 
     <div class="card">
       <h2><a href="https://kikunoya.jp/" target="_blank" rel="noopener">株式会社きくのや 様</a></h2>
-      <div class="meta">
-        <span><strong>業種</strong> 旅館業</span>
-        <span><strong>対応範囲</strong> ヒアリング / 設計 / ワイヤー / デザイン / コーディング / リリース</span>
-        <span><strong>使用技術</strong> HTML/CSS / Sass / GSAP / WordPress</span>
-      </div>
+      <dl class="meta">
+        <dt>業種</dt><dd>旅館業</dd>
+        <dt>対応範囲</dt><dd>ヒアリング / 設計 / ワイヤー / デザイン / コーディング / リリース</dd>
+        <dt>使用技術</dt><dd>HTML/CSS / Sass / GSAP / WordPress</dd>
+      </dl>
     </div>
 
     <div class="card">
       <h2><a href="https://junichi-kato.com/" target="_blank" rel="noopener">加藤淳一建築設計事務所 様</a></h2>
-      <div class="meta">
-        <span><strong>業種</strong> 建設業</span>
-        <span><strong>対応範囲</strong> コーディング / リリース</span>
-        <span><strong>使用技術</strong> HTML/CSS / Sass / jQuery / WordPress</span>
-      </div>
+      <dl class="meta">
+        <dt>業種</dt><dd>建設業</dd>
+        <dt>対応範囲</dt><dd>コーディング / リリース</dd>
+        <dt>使用技術</dt><dd>HTML/CSS / Sass / jQuery / WordPress</dd>
+      </dl>
     </div>
 
     <div class="card">
       <h2><a href="https://zeroreset-nexus.com/" target="_blank" rel="noopener">ゼロリセット 様</a></h2>
-      <div class="meta">
-        <span><strong>業種</strong> パーソナルジム</span>
-        <span><strong>対応範囲</strong> コーディング / リリース</span>
-        <span><strong>使用技術</strong> HTML/CSS / jQuery / WordPress</span>
-      </div>
+      <dl class="meta">
+        <dt>業種</dt><dd>パーソナルジム</dd>
+        <dt>対応範囲</dt><dd>コーディング / リリース</dd>
+        <dt>使用技術</dt><dd>HTML/CSS / jQuery / WordPress</dd>
+      </dl>
     </div>
 
     <div class="card">
       <h2><a href="https://asakura-ind.com/" target="_blank" rel="noopener">浅倉工業 様</a></h2>
-      <div class="meta">
-        <span><strong>業種</strong> 建設業</span>
-        <span><strong>対応範囲</strong> ヒアリング / 設計 / ワイヤー / デザイン / コーディング / リリース / 撮影ディレクション</span>
-        <span><strong>使用技術</strong> HTML/CSS / jQuery / GSAP / WordPress</span>
-      </div>
+      <dl class="meta">
+        <dt>業種</dt><dd>建設業</dd>
+        <dt>対応範囲</dt><dd>ヒアリング / 設計 / ワイヤー / デザイン / コーディング / リリース / 撮影ディレクション</dd>
+        <dt>使用技術</dt><dd>HTML/CSS / jQuery / GSAP / WordPress</dd>
+      </dl>
     </div>
 
   </div>
